@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcTest", "MvcTest\MvcTest.csproj", "{7A3ED452-508B-4109-B8CD-2A447AB395DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcTest.Tests", "MvcTest.Tests\MvcTest.Tests.csproj", "{5D726CAD-41BD-4C00-AAE4-4B41A46B971B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A3ED452-508B-4109-B8CD-2A447AB395DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A3ED452-508B-4109-B8CD-2A447AB395DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A3ED452-508B-4109-B8CD-2A447AB395DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A3ED452-508B-4109-B8CD-2A447AB395DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D726CAD-41BD-4C00-AAE4-4B41A46B971B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D726CAD-41BD-4C00-AAE4-4B41A46B971B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D726CAD-41BD-4C00-AAE4-4B41A46B971B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D726CAD-41BD-4C00-AAE4-4B41A46B971B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

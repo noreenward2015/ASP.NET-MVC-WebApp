@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "ViewMaps";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Places of interest</h2>
+Select map:
+<select onclick="GetMap(value);">
+    <option value="Tralee">Tralee</option>
+    <option value="Killarney">Killarney</option>
+    <option value="Listowel">Listowel</option>
+    <option value="Cork">Cork</option>
+    <option value="Dublin">Dublin</option>
+</select>
+<br />
+<br />
+<div id='earthMap' style="position:relative; width:400px; height:400px;">
+</div>
+<script charset="UTF-8" type="text/javascript"
+        src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.2&mkt=en-us">
+</script>
+<script type="text/javascript">
+    var map = null;
+    var mapID = '';
+
+    function GetMap(mapID)
+    {
+        switch (mapID)
+        {
+            case 'Tralee':
+                map = new VEMap('earthMap');
+                map.LoadMap(new VELatLong(52.2713, -9.6999), 10 ,'i', true);
+                break;
+            case 'Killarney':
+                map = new VEMap('earthMap');
+                map.LoadMap(new VELatLong(52.0599, -9.5044), 10 ,'i' ,true);
+                break;
+            case 'Listowel':
+                map = new VEMap('earthMap');
+                map.LoadMap(new VELatLong(52.446, -9.4854), 10 ,'i' ,true);
+                break;
+            case 'Cork':
+                map = new VEMap('earthMap');
+                map.LoadMap(new VELatLong(51.8969, -8.4863), 10 ,'i' ,true);
+                break;
+            case 'Dublin':
+                map = new VEMap('earthMap');
+                map.LoadMap(new VELatLong(53.3498, -6.2603), 10 ,'i' ,true);
+                break;
+         }
+    }
+</script>
